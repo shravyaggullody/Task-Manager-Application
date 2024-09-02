@@ -1,0 +1,92 @@
+/* .directorybutton {
+    background-color: rgb(4, 3, 78);
+    color: beige;
+    margin-left: 80%;
+    padding: 2%;
+    border-radius: 3px;
+    width: max-content;
+  } */
+  
+  .outerborder {
+    height: auto; /* Use auto height to adapt to the content */
+    width: 30%; /* You can adjust the width as needed */
+    display: inline-block; /* Make the container inline-block for flexible layout */
+  }
+  
+  .outerborder.list {
+    height: auto; /* Use auto height to adapt to the content */
+    width: 100%; /* Occupy full width */
+  }
+  
+  .outerborder.list .directorybutton {
+    margin-left: 92%; /* Adjust margin as needed */
+    height: 8%;
+  }
+  
+  .card.dark-mode {
+    background-color: rgb(28, 28, 28);
+  }
+  
+  #completed {
+    /* border-radius: 30px; */
+    background-color:rgb(16, 123, 127);
+    border-color: black;
+    font-size: 1.2rem;
+  }
+  .outerborder {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr); /* Make the column flexible */
+  }
+  
+  .outerborder {
+    margin: 10px; /* Adjust margin as needed */
+    display: inline-block;
+  }
+  
+ 
+  
+  .card-body {
+    padding: 30px; /* Add padding */
+    min-height: 100px; /* Minimum height for the card body */
+    min-width: 200px; /* Minimum width for the card body */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .card-title {
+    font-size: 1.8rem; /* Set font size for title */
+    margin-bottom: 5px; /* Add bottom margin */
+  }
+  
+  .card-subtitle {
+    font-size: 1rem; /* Set font size for subtitle */
+    margin-top: 5px;
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+  
+  .time {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Push time element to bottom */
+  }
+  
+  .row.d-flex {
+    margin-top: 10px; /* Add top margin to row */
+  }
+
+  @media (min-width: 1200px) {
+  .outerborder {
+    width: 30%; /* 3 cards per row */
+  }
+}
+
+@media (max-width: 1199px) {
+  .outerborder {
+    width: 50%; /* 2 cards per row */
+  }
+}
+
+@media (max-width: 767px) {
+  .outerborder {
+    width: 100%; /* 1 card per row */
+  }
+}
